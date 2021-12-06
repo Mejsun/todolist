@@ -8,8 +8,9 @@ const todoItem = useRef();
 
 function addTodoItem (e){
     e.preventDefault() 
+    if(todoItem.current.value!==''){
     setTasks([...tasks, todoItem.current.value])
-    todoItem.current.value=''}
+    todoItem.current.value=''}}
 
 function deleteItem(i){
     const item = [...tasks]
