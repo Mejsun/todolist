@@ -1,4 +1,78 @@
-.completed{
+$font-stack: 'Poppins', sans-serif;
+$itemcolor: #e6dce5;
+//Colours used: 085467 - AFA7BB - F4C0B3
+* {
+    box-sizing: border-box;
+    margin: 0 auto;
+    border: none;
+}
+body{
+    background: linear-gradient(180deg, rgba(8,84,103,1) 0%, rgba(175,167,187,1) 50%, rgba(244,192,179,1) 100%);
+    font-family: $font-stack;
+    display: flex;
+    align-items: center;
+    height: 100vh;
+}
+h1{
+    padding:10px;
+    color: white;
+    font-family: 'Fuzzy Bubbles', cursive, $font-stack;
+    font-size: 50px;
+    width:fit-content;
+}
+.container{
+    form{
+        border-radius: 10px;
+        background-color: white;
+        height: 30px;
+        width: 350px;
+        overflow: hidden;
+        margin-bottom: 20px;
+            input{
+                height: 30px;
+                width: 300px;
+                margin-left: 10px;
+                font-family: $font-stack;
+                font-weight: bolder;
+        } 
+        input:focus{outline: none;}
+        .fa-plus{
+            font-size:20px;
+            color:rgb(59, 178, 224);
+            background-color: inherit;
+            padding:0;
+            margin:0}
+    }
+    .item{
+        width: 30rem;
+        height: 30px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        margin-top: 5px;
+        align-items: center;
+        color:gray;
+        background-color: $itemcolor;
+        font-family: $font-stack;
+        padding-left: 5px;
+        font-weight: bold;
+        .buttons{
+        display: flex;
+        justify-content:flex-end;
+        flex-direction: row;
+        margin:0;
+        }
+        .delete{background-color: rgb(250, 181, 174);}
+        .complete{background-color:#86b88c;}
+    }
+}
+.btn{
+    width: 30px;
+    height: 30px;
+}
+.done{
     text-decoration: line-through;
     color: gainsboro;
 }
+
+//h1, container, form, submit, delete, complete, item

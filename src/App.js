@@ -5,7 +5,7 @@ import Todo from './assets/components/Todo/Todo.js'
 function App() {
   return (
     <div className="App">
-      <p>My todos</p>
+      <h1>Todo List</h1>
       <Todo/>
     </div>
     
