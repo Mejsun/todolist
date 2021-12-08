@@ -1,19 +1,17 @@
 $font-stack: 'Poppins', sans-serif;
-$bgrcolor: #e6dce5;
+$bgrcolor: #e7e3e7;
 $primarycolor: rgb(100, 97, 97);
 
 * {
     box-sizing: border-box;
     margin: 0 auto;
-    border: none;
-}
+    border: none;}
 body{
     background: linear-gradient(180deg, rgba(8,84,103,1) 0%, rgba(175,167,187,1) 50%, rgba(244,192,179,1) 100%);
     font-family: $font-stack;
     margin: 0;
     padding: 0;
-    min-height: 100vh;
-}
+    min-height: 100vh;}
 h1{
     color: white;
     font-family: 'Fuzzy Bubbles', cursive, $font-stack;
@@ -37,12 +35,10 @@ h1{
             input{
                 height: 9vh;
                 width: 330px;
-                margin-left: 10px;
                 font-size: 1.3rem;
                 font-family: $font-stack;
                 font-weight: bolder;
-                margin: 0.3rem 0 0.3rem 0;
-        } 
+                margin: 0.3rem 0 0.3rem 0.6rem;} 
         input:focus{outline: none}
         .submit{
             font-size: 1.8rem !important;
@@ -65,26 +61,23 @@ h1{
         padding-left: 5px;
         font-size: 1.3rem;
         font-weight: bold;  
+        text-transform: capitalize;
             .buttons{
             display: flex;
             justify-content:flex-end;
             flex-direction: row;
             margin:0;
-            padding:0;
-            }
+            padding:0;}
             .delete{background-color: rgb(250, 181, 174);}
             .complete{background-color:#86b88c;}
     }
-}
+    .done{
+        text-decoration: line-through;
+        color: rgb(197, 195, 195);
+    }}
 .btn{
    width: 7vh;
    height: 7vh;
    font-size: 1.3rem;
    color:$primarycolor ;
 }
-.done{
-    text-decoration: line-through;
-    color: gainsboro;
-}
-
-//h1, container, form, submit, delete, complete, item
