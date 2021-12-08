@@ -16,7 +16,8 @@ function submitItem (e){
 
 function deleteItem(i){
     const items = [...tasks]
-    items.splice(i,1)
+    if (window.confirm('This item will be deleted!')) {items.splice(i,1)}
+    else{return items}
     setTasks(items)}
 
 function completeItem(i){
