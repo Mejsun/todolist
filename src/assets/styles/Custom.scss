@@ -45,7 +45,7 @@ h1{
         margin-bottom: 1.2rem;
             input{
                 height: 6vh;
-                width: 300px;
+                width: 280px;
                 font-size: 1.3rem;
                 font-family: $font-stack;
                 font-weight: bolder;
@@ -61,7 +61,7 @@ h1{
             margin: auto}
     }
     .item{
-        height: 7vh;
+        height: fit-content;
         width: 350px;
         display: flex;
         flex-direction: row;
@@ -80,7 +80,8 @@ h1{
             justify-content:flex-end;
             flex-direction: row;
             margin:0;
-            padding:0;}
+            padding:0;
+            }
             .delete{background-color: rgb(250, 181, 174);}
             .complete{background-color:#86b88c;}
     }
