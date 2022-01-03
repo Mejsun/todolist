@@ -15,17 +15,16 @@ body{
     .timeContainer{
         position: fixed;
         bottom: 0;
-        font-size: 1.2rem;
+        font-size: 0.8rem;
         color: rgba(8,84,103,1);
         font-weight: bolder;
         width: 100%;
-        background-color:rgb(236, 188, 176);
         p {width: 200px; float: right;}
 }}
 h1{
     color: white;
     font-family: 'Fuzzy Bubbles', cursive, $font-stack;
-    font-size: 50px;
+    font-size: 2.5rem;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -33,35 +32,37 @@ h1{
     padding-bottom: 1vh;
 }
 .container{
-    margin-bottom: 80px;
+    padding-bottom: 80px;
     form{
         border-radius: 10px;
         background-color: white;
         height: 7vh;
-        width: 350px;
+        width: 300px;
         overflow: hidden;
         display: flex;
         justify-content: center;
         align-items: center;
         margin-bottom: 1.2rem;
             input{
-                height: 9vh;
-                width: 330px;
+                height: 6vh;
+                width: 300px;
                 font-size: 1.3rem;
                 font-family: $font-stack;
                 font-weight: bolder;
                 margin: 0.3rem 0 0.3rem 0.6rem;} 
         input:focus{outline: none}
         .submit{
-            font-size: 1.8rem !important;
+            padding: 0;
+            font-size: 1.2rem !important;
             color:rgba(8,84,103);
             background-color: inherit;
-            margin: 0.5rem;
-            margin-left: 0}
+            display: flex;
+            align-items: center;
+            margin: auto}
     }
     .item{
         height: 7vh;
-        width: 30rem;
+        width: 350px;
         display: flex;
         flex-direction: row;
         justify-content: space-between;
@@ -94,3 +95,4 @@ h1{
    color:$primarycolor ;
 }
 .btn:hover{cursor: pointer;}
+
